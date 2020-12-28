@@ -1,0 +1,42 @@
+.container{
+  display: flex;
+  justify-content: center;
+  border: 5px aqua solid;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  align-items: center;
+  margin: 25px;
+  padding: 25px;
+  font-family: sans-serif;
+  font-size: 2em;
+  color: white;
+  
+  
+}
+
+.entireBox{
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  width: 900px;
+  height: 900px;
+ 
+  
+}
+#bigBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;  
+  
+}
+
+
+body {
+  background-image: url(background.jpeg)
+}
