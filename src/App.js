@@ -5,18 +5,7 @@ import {Box , Beats , Bbox} from './Parts.js'
 
 class App extends React.Component{
 
-  /*state = {
-  beatbox: new BeatBox({
-   'a': new Box("A", "teal", "sound.mp3")
 
-  } */
-
-  /*class Bbox {
-  boxes = {};
-  constructor(allboxes) {
-    this.boxes = allboxes
-  }
-} */
 
 
   state = {
