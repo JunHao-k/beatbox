@@ -9,12 +9,7 @@ class App extends React.Component{
 
 
   state = {
-    /*entireBeatboxObj: new BboxObj({
-        'a' : new Box("A" , "teal" , new Beats('assets/Piano Chord 208.mp3') , 'black'),
-        'b' : new Box("B" , "purple" , new Beats('assets/Piano Chord 209.mp3') , 'black'),
-        'c' : new Box("C" , "blue" , new Beats("assets/Piano Chord 331.mp3") , 'red')
-    }),
-    */
+
    
     entireBeatbox: new Bbox([
        new Box("0" , "A" , "turquoise" , new Beats('assets/Piano Chord 208.mp3') , 'aqua' , require("./background.jpeg")),
