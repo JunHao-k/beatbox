@@ -55,12 +55,14 @@ class App extends React.Component{
 
   switchUse = () => {
     if(this.state.currentActive === 1){
+
       this.setState({
         currentActive: 2,
         active: this.state.musicPlayer,
       })
     }
     else{
+
       this.setState({
         currentActive: 1,
         active: this.state.entireBeatbox,
@@ -83,10 +85,8 @@ class App extends React.Component{
       newMusic.playThis()
       this.setState({
         currentlyPlaying: newMusic
-
       })
     }
-
   }
 
   //So function getColour returns the activeColour and passed this colour into the props bgColour
@@ -137,7 +137,7 @@ class App extends React.Component{
       
       <div id = "bigBox">
 
-        <button onClick = {this.switchUse}> Listen to Jun Hao's 2020 Hits </button>
+        <button id = 'changeUse' onClick = {this.switchUse}> Listen to Jun Hao's 2020 Hits </button>
 
         <div class = 'entireBox' >
           {this.displayBoxes()}

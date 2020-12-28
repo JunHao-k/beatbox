@@ -54,7 +54,6 @@ class Box{
     getAudio = () => {
         return this.individualBeats;
     }
-
     stopBeat = () => {
         return this.individualBeats.stopMusic;
     }

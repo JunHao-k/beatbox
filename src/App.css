@@ -40,3 +40,19 @@
 body {
   background-image: url(background.jpeg)
 }
+
+#changeUse{
+  padding:10px;
+  font-size:20px;
+  border: 4px aqua solid;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: #495057;
+  transition: 0.25s;
+}
+
+#changeUse:hover{
+  background-color: #333;
+  color: white;
+  transform: translate3d(0px, -5px, 0px);
+}
