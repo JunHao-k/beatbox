@@ -40,8 +40,11 @@ class App extends React.Component{
    currentActive: 0, 
 
    currentlyPlaying: null,
+
+   currentPict: null,
   };
 
+  
   
 
   componentDidMount() {
@@ -62,14 +65,25 @@ class App extends React.Component{
       })
     }
     else{
-
       this.setState({
         currentActive: 1,
         active: this.state.entireBeatbox,
       })
     }
+
+    if(this.state.currentlyPlaying != null){
+      this.state.currentlyPlaying.stopMusic()
+      let c = this.state.currentlyPlaying;
+      c.currentTime = 0;
+    }
   }
  
+  recordBboxbeat = (beatPlayed) => {
+    this.setState({
+      currentlyPlaying: beatPlayed
+    })
+  }
+
   switchMusic = (newMusic) => {
     if(this.state.currentlyPlaying === null){
       newMusic.playThis()
@@ -78,7 +92,7 @@ class App extends React.Component{
       })
     }
     else{
-      this.state.currentlyPlaying.stopMusic()
+     this.state.currentlyPlaying.stopMusic()
       let c = this.state.currentlyPlaying;
       c.currentTime = 0;
       
@@ -88,7 +102,20 @@ class App extends React.Component{
       })
     }
   }
+/*
+  switchPict = (newPict) => {
+    if(this.state.currentPict === null){
+      style = {
+        backgroundImage: `url(${
+          newPict.getPict()
+        })`,
+      }
+    }
+    else{
 
+    }
+  }
+*/
   //So function getColour returns the activeColour and passed this colour into the props bgColour
   //Props is an object containing bgColour, fontColour etc etc , bgColour is like an key in the props object thats 
   //holds a value. bgColour is a key holding the activeColour as value
@@ -104,6 +131,7 @@ class App extends React.Component{
                 boColour = {b.getBorderColour()} 
                 letterDisplayed = {b.getKeyCode()} 
                 playMusic = {b.getBeat()}
+                recordAudio = {()=>{this.recordBboxbeat(b.getAudio())}}
               />
           </div>
           
@@ -120,7 +148,7 @@ class App extends React.Component{
                 boColour = {b.getBorderColour()} 
                 letterDisplayed = {b.getKeyCode()} 
                 playMusic = {b.getBeat()}
-                switchMusic = {()=>{this.switchMusic(b.getAudio())}}
+                switchMusicplay = {()=>{this.switchMusic(b.getAudio())}}
                 bgPict = {b.getPict()}
               />
           </div>
@@ -135,9 +163,14 @@ class App extends React.Component{
   render() {
     return (
       
-      <div id = "bigBox">
+      <div id = "bigBox"  style={{
+        backgroundImage: `url(${
+          require("./background.jpeg")
+        })`,
+        height: "100vh"
+      }}>
 
-        <button id = 'changeUse' onClick = {this.switchUse}> Listen to Jun Hao's 2020 Hits </button>
+        <button id = 'changeUse' onClick = {this.switchUse}> Jun Hao's 2020 Hits </button>
 
         <div class = 'entireBox' >
           {this.displayBoxes()}

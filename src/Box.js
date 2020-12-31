@@ -10,8 +10,6 @@ export default class Boxclass extends React.Component{
 
     /* 
         I only use this constructor if I need to do extra work in the constructor beside the two lines there 
-        
-    
     */
     constructor(props){
         super(props)
@@ -19,15 +17,14 @@ export default class Boxclass extends React.Component{
         this.state = {
             bgColor: "",
             boxShadow: '',
-            backgroundImage: '',
-            boxOrmusic: props.boxOrmusic
+            backgroundImage: ''
         }
     }
 
     triggerColour = () => {
         this.setState({
             bgColor: this.props.bgColour,
-            boxShadow: `0px 0px 17px 0px ${this.props.bgColour}`
+            boxShadow: `0px 0px 17px 0px ${this.props.bgColour}`,
         })
         setTimeout(() => {
             this.setState({
@@ -37,14 +34,14 @@ export default class Boxclass extends React.Component{
         } , 250);
     }
 
-    
+    /*
     switchPict = (pict) => {
         if(this.state.currentPict === 0){
             this.setState({
                 currentPict: 1,
                 backgroundImage: this.pict
             })
-        }//{'background-image-url.png'}
+        }
         else{
             this.setState({
                 currentPict: 0,
@@ -53,21 +50,25 @@ export default class Boxclass extends React.Component{
         }
     }
 
-
+*/
     render(){
         return(
             <div>
                 <div class = 'container' 
-                style = {{backgroundColor: this.state.bgColor,  borderColor: this.props.boColour, boxShadow: this.state.boxShadow}}
+                style = {{backgroundColor: this.state.bgColor,  
+                    borderColor: this.props.boColour, 
+                    boxShadow: this.state.boxShadow,
+                }}
                 onClick = {()=>{
                         if(this.props.boxOrmusic === true){
                             this.props.playMusic()
+                            this.props.recordAudio()
                         }
                         else{
-                            this.props.switchMusic();
+                            this.props.switchMusicplay();
                         }
                         this.triggerColour()
-                        this.switchPict(this.props.bgPict)
+                        
                     }}
                 >
                     {this.state.count}
