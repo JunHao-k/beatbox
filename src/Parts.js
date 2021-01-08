@@ -25,13 +25,14 @@ class Box{
     individualBeats = null;
     backgroundPict = ''
 
-    constructor(id , keycode , activeColour, individualBeats , borderColour , backgroundPict){
+    constructor(id , keycode , activeColour, individualBeats , borderColour , backgroundPict ){
         this.id = id
         this.keycode = keycode
         this.activeColour = activeColour
         this.individualBeats = individualBeats
         this.borderColour = borderColour
         this.backgroundPict = backgroundPict
+        
     }
 
     getColour = () => {
@@ -60,6 +61,7 @@ class Box{
     getPict = () => {
         return this.backgroundPict;
     }
+
 
 }
 

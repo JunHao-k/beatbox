@@ -18,7 +18,7 @@
 .entireBox{
   display: flex;
   justify-content: center;
-  background-color: #333;
+  background-color: #3333336c;
   border-radius: 20px;
   flex-wrap: wrap;
   align-content: space-evenly;
@@ -32,13 +32,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200vh;  
+  height: 150vh;  
   
-}
-
-
-#bigBox {
-  background-image: url(background.jpeg)
 }
 
 
@@ -49,7 +44,7 @@
   border-radius: 10px;
   font-weight: bolder;
   color: #495057;
-  transition: 0.25s;
+  transition: 0.25s ease;
 }
 
 #changeUse:hover{

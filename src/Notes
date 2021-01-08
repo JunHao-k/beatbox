@@ -1,0 +1,70 @@
+<BoxCom 
+    boxOrmusic = {false}
+    bgColour = {b.getColour()} 
+    boColour = {b.getBorderColour()} 
+    .
+    .
+    .
+
+In this example, props (bgColour) is an object that contains various key and value pair.
+backgroundColor is one of it, backgroundColor will be represented by => bgColor: ""
+Simply put, props is an object containing bgColour, fontColour 
+
+props = {
+    bgColour: ""
+}
+
+That is why when we type this.props, we are referring to the props which is an entire object in itself and if 
+we only want to target bgColor we do this.props.bgColour because bgColour is the name of the key given to 
+bgColor(Think backgroundColor) in the props object
+
+
+
+//export default class Boxclass extends React.Component
+React.Component means that the component class is from react
+
+    constructor(props){
+        super(props)
+        this.props = props;
+        this.state = {
+            bgColor: "",
+            boxShadow: '',
+            backgroundImage: ''
+        }
+    }
+
+React is a parent component class and it also needs to know what props it is receiving thats why we use super 
+in the constructor above that we use in boxClass component
+
+if my componenent needs to do special extra things then we put the constructor or else its is actually optional.
+If we don't use the constructor, Javascript will automatically use component constructor that 
+React have (the React parent component)
+
+Therefore, if there are extra work in the constructor beside the "super(props)" and "this.props = props;" , then,
+we need to add these two lines with the extra code that is meant to execute the extra work you intended for your 
+web application.
+
+For example, in axios, for a certain component, if there is a need to use axios to get data, i would do it in a 
+constructor
+
+Using Parts.js example, for class Box{...}, class Box did not extend to React.Component or anything. Therefore,
+Javascript will give this class Box a default constructor that does not do anything but must be given because all 
+class needs a constructor
+
+Using Box.js as example, boxClass now extends React.Component, if boxClass do not have it's own constructor, 
+Javascript will use it's parent class constructor which is React.Component's constructor. React.Component's constructor
+will be like ranked the highest in the hierarchy.
+
+However, in this case, since boxClass has it's own constructor(the one where we added in ourselves), Javascript will
+use this constructor we created but since React.Component's constructor is ranked the "highest"(big boss). It needs to know
+the props that we used to pass into constructor that we have created which is why super(props) is used to "tell"
+"big boss" what props that we are using and needs to be aware of. 
+
+style = {{backgroundColor: this.props.bgColour}} --> The double braces, the inner one is white while the outer one 
+is blue. The blue outer double braces just means that within this two blue braces there are javascript elements.
+The inner white colour braces represent the double brace in an object which contain the typical key and value items
+
+
+
+
+

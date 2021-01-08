@@ -2,22 +2,15 @@ import React from 'react'
 
 //React.Component means that the component class is from react 
 export default class Boxclass extends React.Component{
-    
-    state = {
-        count: 0,
-        currentPict: 0,
-    }
-
     /* 
         I only use this constructor if I need to do extra work in the constructor beside the two lines there 
     */
     constructor(props){
         super(props)
-        this.props = props;
+        //this.props = props;      
         this.state = {
             bgColor: "",
             boxShadow: '',
-            backgroundImage: ''
         }
     }
 
@@ -28,29 +21,14 @@ export default class Boxclass extends React.Component{
         })
         setTimeout(() => {
             this.setState({
-                bgColor: '#333',
+                bgColor: '#3333336c',
                 boxShadow: '',
             })
         } , 250);
     }
 
-    /*
-    switchPict = (pict) => {
-        if(this.state.currentPict === 0){
-            this.setState({
-                currentPict: 1,
-                backgroundImage: this.pict
-            })
-        }
-        else{
-            this.setState({
-                currentPict: 0,
-                backgroundImage: this.pict
-            })
-        }
-    }
 
-*/
+
     render(){
         return(
             <div>
@@ -66,9 +44,9 @@ export default class Boxclass extends React.Component{
                         }
                         else{
                             this.props.switchMusicplay();
+                            this.props.switchPict(this.props.bgPict);
                         }
                         this.triggerColour()
-                        
                     }}
                 >
                     {this.state.count}
