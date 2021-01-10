@@ -26,13 +26,13 @@ class App extends React.Component{
     musicPlayer: new Bbox([
       new Box("0" , "J" , "turquoise" , new Beats('assets/Homura.mp3') , 'aqua' , require("./rengoku.png").default),
       new Box("1" , "B" , "turquoise" , new Beats('assets/ONE OK ROCK - Mighty Long Fall.mp3') , 'aqua' , require("./OOR.png").default),
-      new Box("2" , "C" , "turquoise" , new Beats("assets/Uru-あなたがいることで因為有你.mp3") , 'aqua' , require("./Uru.jpg").default),
+      new Box("2" , "C" , "turquoise" , new Beats("assets/Uru-あなたがいることで因為有你.mp3") , 'aqua' , require("./displayPicts/Ur_u.jpg").default),
       new Box("2" , "D" , "pink" , new Beats("assets/Arcade Fire - Wake Up.mp3") , 'aqua' , require("./arcadefire.jpg").default),
-      new Box("2" , "E" , "pink" , new Beats("assets/The Band Perry - If I Die Young.mp3") , 'aqua' , require("./bandperry.jpg").default),
+      new Box("2" , "E" , "pink" , new Beats("assets/The Band Perry - If I Die Young.mp3") , 'aqua' , require("./displayPicts/bandPerry.jpg").default),
       new Box("2" , "F" , "pink" , new Beats("assets/Green Day -Boulevard of Broken Dreams.mp3") , 'aqua' , require("./green_day.jpg").default),
       new Box("2" , "G" , "#F6E7D2" , new Beats("assets/盧廣仲-刻在我心底的名字.mp3") , 'aqua' , require("./刻在我心底的名.png").default),
       new Box("2" , "H" , "#F6E7D2" , new Beats("assets/周杰倫 一路向北.mp3") , 'aqua' , require("./jay.jpg").default),
-      new Box("2" , "I" , "#F6E7D2" , new Beats("assets/八三夭 831想見你想見你想見你.mp3") , 'aqua' , require("./831.jpg").default),
+      new Box("2" , "I" , "#F6E7D2" , new Beats("assets/八三夭 831想見你想見你想見你.mp3") , 'aqua' , require("./displayPicts/3000.jpg").default),
    ]),
 
    active: new Bbox([]),
