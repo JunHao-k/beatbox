@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/beatbox/static/css/main.f8f4c9d7.chunk.css",
+    "main.js": "/beatbox/static/js/main.69c5cf1b.chunk.js",
+    "main.js.map": "/beatbox/static/js/main.69c5cf1b.chunk.js.map",
+    "runtime-main.js": "/beatbox/static/js/runtime-main.b4750b76.js",
+    "runtime-main.js.map": "/beatbox/static/js/runtime-main.b4750b76.js.map",
+    "static/js/2.febd2438.chunk.js": "/beatbox/static/js/2.febd2438.chunk.js",
+    "static/js/2.febd2438.chunk.js.map": "/beatbox/static/js/2.febd2438.chunk.js.map",
+    "static/js/3.bd99feea.chunk.js": "/beatbox/static/js/3.bd99feea.chunk.js",
+    "static/js/3.bd99feea.chunk.js.map": "/beatbox/static/js/3.bd99feea.chunk.js.map",
+    "index.html": "/beatbox/index.html",
+    "static/css/main.f8f4c9d7.chunk.css.map": "/beatbox/static/css/main.f8f4c9d7.chunk.css.map",
+    "static/js/2.febd2438.chunk.js.LICENSE.txt": "/beatbox/static/js/2.febd2438.chunk.js.LICENSE.txt",
+    "static/media/3000.jpg": "/beatbox/static/media/3000.ccf7c3de.jpg",
+    "static/media/OOR.png": "/beatbox/static/media/OOR.3a7778ef.png",
+    "static/media/Ur_u.jpg": "/beatbox/static/media/Ur_u.4a6824d0.jpg",
+    "static/media/arcadefire.jpg": "/beatbox/static/media/arcadefire.9adee80d.jpg",
+    "static/media/background.jpeg": "/beatbox/static/media/background.5d2a7332.jpeg",
+    "static/media/bandPerry.jpg": "/beatbox/static/media/bandPerry.8d7af48f.jpg",
+    "static/media/green_day.jpg": "/beatbox/static/media/green_day.9ff2e092.jpg",
+    "static/media/jay.jpg": "/beatbox/static/media/jay.aae5a852.jpg",
+    "static/media/rengoku.png": "/beatbox/static/media/rengoku.72fc2214.png",
+    "static/media/刻在我心底的名.png": "/beatbox/static/media/刻在我心底的名.aeb57864.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4750b76.js",
+    "static/js/2.febd2438.chunk.js",
+    "static/css/main.f8f4c9d7.chunk.css",
+    "static/js/main.69c5cf1b.chunk.js"
+  ]
+}
