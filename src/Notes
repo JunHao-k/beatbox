@@ -65,6 +65,10 @@ is blue. The blue outer double braces just means that within this two blue brace
 The inner white colour braces represent the double brace in an object which contain the typical key and value items
 
 
+------ ComponentDidMount ---------------
 
+
+if we wish to use ComponentDidMount, we need to use class App extends React.Component. ComponentDidMount would be 
+fired after the first render.
 
 
